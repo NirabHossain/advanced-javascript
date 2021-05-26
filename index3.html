@@ -28,7 +28,8 @@
                 countryWrite.innerText=countryName;
                 capitalWrite.innerText=capitalName;
                 img.src=info.flag;
-                img.style.width="100px";
+                img.style.width="20%";
+                img.style.border="2px solid grey";
                 img.style.display="none";
 
                 div.appendChild(countryWrite);
@@ -39,7 +40,7 @@
         })
 
         ol.addEventListener('click',function(){
-            console.log(event.target.lastChild);
+            event.target.parentElement.lastChild.style.display="block";
         })
     </script>
 </body>
